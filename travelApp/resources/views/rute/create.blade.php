@@ -12,28 +12,28 @@
             @csrf
             <div class="form-group">
                 <label for="asal">Asal Perjalanan</label>
-                <input type="text" class="form-control" id="asal" name="asal" value="{{ old('asal') }}" placeholder="Asal Perjalanan">
+                <input type="text" class="form-control" id="asal" name="asal" value="{{ old('asal') }}" placeholder="Masukan Asal Perjalanan">
                 @error('asal')
                     <span class="text-danger">{{$message}}</span>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="tujuan">Tujuan Perjalanan</label>
-                <input type="text" class="form-control" id="tujuan" name="tujuan" value="{{ old('tujuan') }}" placeholder="Tujuan Perjalanan">
+                <input type="text" class="form-control" id="tujuan" name="tujuan" value="{{ old('tujuan') }}" placeholder="Masukan Tujuan Perjalanan">
                 @error('tujuan')
                     <span class="text-danger">{{$message}}</span>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="harga">Harga</label>
-                <input type="number" class="form-control" id="harga" name="harga" value="{{ old('harga') }}" placeholder="Harga">
+                <input type="number" class="form-control" id="harga" name="harga" value="{{ old('harga') }}" placeholder="Masukan Harga">
                 @error('harga')
                     <span class="text-danger">{{$message}}</span>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="estimasi_waktu">Estimasi Waktu</label>
-                <input type="text" class="form-control" id="estimasi_waktu" name="estimasi_waktu" value="{{ old('estimasi_waktu') }}" placeholder="Estimasi Waktu">
+                <input type="text" class="form-control" id="estimasi_waktu" name="estimasi_waktu" value="{{ old('estimasi_waktu') }}" placeholder="Masukan Estimasi Waktu">
                 @error('estimasi_waktu')
                     <span class="text-danger">{{$message}}</span>
                 @enderror
@@ -43,5 +43,5 @@
         </form>
       </div>
     </div>
-  </div>
+</div>
 @endsection

@@ -1,34 +1,38 @@
 @extends('layout.main')
 
-@section('title','Rute')
+@section('title','Kendaraan')
 
 @section('content')
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Rute Perjalanan</h4>
-            <p class="card-description">List Rute Perjalanan</p>
-            <a href="{{ route('rute.create') }}" class="btn btn-primary col-lg-12">Tambah Rute</a>
+            <h4 class="card-title">Kendaraan</h4>
+            <p class="card-description">List Kendaraan</p>
+            <a href="{{ route('kendaraan.create') }}" class="btn btn-primary col-lg-12">Tambah Kendaraan</a>
             <div class="table-responsive pt-3">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th class="text-center">Asal</th>
-                            <th class="text-center">Tujuan</th>
-                            <th class="text-center">Harga</th>
-                            <th class="text-center">Estimasi Waktu</th>
+                            <th class="text-center">Plat Nomor</th>
+                            <th class="text-center">Merk Kendaraan</th>
+                            <th class="text-center">Warna</th>
+                            <th class="text-center">Kapasitas</th>
+                            <th class="text-center">Bahan Bakar</th>
+                            <th class="text-center">Status</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($rute as $item)
+                        @foreach ($kendaraan as $item)
                         <tr>
-                            <td class="text-center">{{ $item['asal'] }}</td>
-                            <td class="text-center">{{ $item['tujuan'] }}</td>
-                            <td class="text-center">{{ $item['harga'] }}</td>
-                            <td class="text-center">{{ $item['estimasi_waktu'] }}</td>
+                            <td class="text-center">{{ $item['plat'] }}</td>
+                            <td class="text-center">{{ $item['merk_mobil'] }}</td>
+                            <td class="text-center">{{ $item['warna'] }}</td>
+                            <td class="text-center">{{ $item['kapasitas'] }} Orang</td>
+                            <td class="text-center">{{ $item['bahan_bakar'] }}</td>
+                            <td class="text-center">{{ $item['status'] }}</td>
                             <td class="text-center">
-                                <a href="{{ route('rute.edit', $item['id']) }}" class="btn btn-sm btn-transparant mdi mdi-pen mdi-24px"></a>
+                                <a href="{{ route('kendaraan.edit', $item['id']) }}" class="btn btn-sm btn-transparant mdi mdi-pen mdi-24px"></a>
                             </td>
                         </tr>
                         @endforeach

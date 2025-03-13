@@ -20,7 +20,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link rel="shortcut icon" href="../../images/miniweb.png" />
 </head>
 
 <body>
@@ -35,10 +35,10 @@
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="#">
-            <img src="../../images/logo.svg" alt="logo" />
+            <img src="../../images/logoku.svg" alt="logo" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="../../index.html">
-            <img src="../../images/logo-mini.svg" alt="logo" />
+            <img src="../../images/logomini.svg" alt="logo" />
           </a>
         </div>
       </div>
@@ -265,7 +265,7 @@
                     <span class="menu-title">Dashboard</span>
                 </a>
             </li>
-            <li class="nav-item nav-category">Travel Fitur</li>
+            <li class="nav-item nav-category"> Fitur Travel </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('rute') }}">
                 <i class="menu-icon mdi mdi-road"></i>
@@ -276,6 +276,18 @@
                 <a class="nav-link" href="{{ url('kendaraan') }}">
                 <i class="menu-icon mdi mdi-car"></i>
                 <span class="menu-title">Kendaraan</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('sopir') }}">
+                <i class="menu-icon mdi mdi-account"></i>
+                <span class="menu-title">Sopir</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('jadwal') }}">
+                <i class="menu-icon mdi mdi-table"></i>
+                <span class="menu-title">Jadwal</span>
                 </a>
             </li>
         </ul>
